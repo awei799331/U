@@ -1,3 +1,5 @@
 # ignore lmoa
 /ENV
 /ENV/**
+/xd
+/xd/**
