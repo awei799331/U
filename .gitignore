@@ -1,5 +1,3 @@
 # ignore lmoa
 /ENV
 /ENV/**
-/data
-/data/**
