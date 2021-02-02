@@ -3,3 +3,5 @@
 /ENV/**
 /xd**
 /xd**/**
+/predictor-app/node_modules
+/predictor-app/node_modules/**
