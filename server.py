@@ -1,6 +1,7 @@
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from flask import Flask, request
+from flask_cors import CORS, cross_origin
 from utils.create_hash import create_int_to_word
 import pickle
 import numpy
@@ -14,6 +15,8 @@ word_to_int_loaded = pickle.load(open("xd_loss0.4299/xd_loss0.4299/word2int.p", 
 int_to_word_loaded = create_int_to_word(word_to_int_loaded)
 
 app = Flask(__name__)
+CORS(app, support_credentials=True)
+@cross_origin(supports_credentials=True)
 
 @app.route("/predict", methods=["POST"])
 def predict():
