@@ -1,2 +1,4 @@
-# U
-U
+# Next Word Predictor
+It's Harry Potter and the Repo of terrible models! I didn't know what to call the project so I just named it U lol. This application uses the Tensorflow Universal Sentence Encoder and a Dense Neural Network to predict the next word of a phrase. I trained it using the text from Harry Potter and the Philosopher's Stone [(URL to source here)](https://github.com/formcept/whiteboard/blob/master/nbviewer/notebooks/data/harrypotter/Book%201%20-%20The%20Philosopher's%20Stone.txt) by breaking the text into ngrams of various sizes. To preprocess the text, I removed punctuation and then used ScraPy to tokenize the text.
+
+To make the software more accessible, I hosted it on a simple Rest API Flask server and also wrote (more like speedran) a React application. It will be hosted on Heroku (free version so after a few minutes of inactivity it automatically closes itself so you have to wait a while to view the app) (also link isn't up yet).
