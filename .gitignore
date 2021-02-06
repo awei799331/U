@@ -5,3 +5,6 @@
 /xd**/**
 /predictor-app/node_modules
 /predictor-app/node_modules/**
+/predictor-app/npm-debug.log
+/predictor-app/.DS_Store
+/predictor-app/*.env

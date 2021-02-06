@@ -20,12 +20,15 @@ CORS(app, support_credentials=True)
 
 @app.route("/predict", methods=["POST"])
 def predict():
-  data = request.json
-  embedded = embed([data["string"]])
-  outputboi = model.predict(embedded.numpy()) # 1 * 6000
-  outputboi = tf.math.argmax(outputboi, axis=1)
-  result = int_to_word_loaded[int(outputboi.numpy()[0])]
-  return { "word": result }
+  try:
+    data = request.json
+    embedded = embed([data["string"]])
+    outputboi = model.predict(embedded.numpy()) # 1 * 6000
+    outputboi = tf.math.argmax(outputboi, axis=1)
+    result = int_to_word_loaded[int(outputboi.numpy()[0])]
+    return { "word": result }
+  except:
+    return 'error', 500
 
 if __name__ == '__main__':
   app.run(host="127.0.0.1", port=5000)
