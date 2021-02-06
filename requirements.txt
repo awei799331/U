@@ -1,0 +1,7 @@
+pip
+tensorflow
+tensorflow_hub
+flask
+wheel
+flask-cors
+numpy
