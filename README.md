@@ -11,3 +11,12 @@ To run:
 3. Open virtual environment
 4. pip install -r requirements.txt
 5. Download model and unzip it to root folder of project
+6. Run the backend server with the command: ``` python server.py ```
+7. Using a different terminal, enter into the frontend directory with: ``` cd predictor-app ```
+8. Run ``` npm install ```
+9. Start the application with ``` npm start ```
+10. Test the model with the input box
+
+### Sample keywords for the model:
+Harry Potter
+One day
