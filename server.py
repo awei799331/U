@@ -11,7 +11,7 @@ from tensorflow import keras
 
 embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 model = keras.models.load_model('xd_2-9gramslowest/xd_2-9gramslowest')
-word_to_int_loaded = pickle.load(open("word2int.p", "rb"))
+word_to_int_loaded = pickle.load(open("xd_2-9gramslowest/word2int.p", "rb"))
 int_to_word_loaded = create_int_to_word(word_to_int_loaded)
 
 app = Flask(__name__)
