@@ -5,3 +5,4 @@ flask
 wheel
 flask-cors
 numpy
+gunicorn
