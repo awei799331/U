@@ -18,5 +18,6 @@ To run:
 10. Test the model with the input box
 
 ### Sample keywords for the model:
-Harry Potter
-One day
+Harry Potter,
+One day,
+Dumbledore
